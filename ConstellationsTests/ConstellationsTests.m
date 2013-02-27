@@ -1,0 +1,32 @@
+//
+//  ConstellationsTests.m
+//  ConstellationsTests
+//
+//  Created by Steve on 2/26/13.
+//  Copyright (c) 2013 Steve. All rights reserved.
+//
+
+#import "ConstellationsTests.h"
+
+@implementation ConstellationsTests
+
+- (void)setUp
+{
+    [super setUp];
+    
+    // Set-up code here.
+}
+
+- (void)tearDown
+{
+    // Tear-down code here.
+    
+    [super tearDown];
+}
+
+- (void)testExample
+{
+    STFail(@"Unit tests are not implemented yet in ConstellationsTests");
+}
+
+@end

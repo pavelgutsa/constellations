@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9804BCD616DDD8DB00367062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCD516DDD8DB00367062 /* UIKit.framework */; };
+		9804BCD816DDD8DB00367062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCD716DDD8DB00367062 /* Foundation.framework */; };
+		9804BCDA16DDD8DB00367062 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCD916DDD8DB00367062 /* CoreGraphics.framework */; };
+		9804BCE016DDD8DB00367062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9804BCDE16DDD8DB00367062 /* InfoPlist.strings */; };
+		9804BCE216DDD8DB00367062 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9804BCE116DDD8DB00367062 /* main.m */; };
+		9804BCE616DDD8DB00367062 /* ConstellationsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9804BCE516DDD8DB00367062 /* ConstellationsAppDelegate.m */; };
+		9804BCE816DDD8DB00367062 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9804BCE716DDD8DB00367062 /* Default.png */; };
+		9804BCEA16DDD8DB00367062 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9804BCE916DDD8DB00367062 /* Default@2x.png */; };
+		9804BCEC16DDD8DB00367062 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9804BCEB16DDD8DB00367062 /* Default-568h@2x.png */; };
+		9804BCEF16DDD8DB00367062 /* ConstellationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9804BCEE16DDD8DB00367062 /* ConstellationsViewController.m */; };
+		9804BCF216DDD8DB00367062 /* ConstellationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9804BCF016DDD8DB00367062 /* ConstellationsViewController.xib */; };
+		9804BCFA16DDD8DC00367062 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCF916DDD8DC00367062 /* SenTestingKit.framework */; };
+		9804BCFB16DDD8DC00367062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCD516DDD8DB00367062 /* UIKit.framework */; };
+		9804BCFC16DDD8DC00367062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCD716DDD8DB00367062 /* Foundation.framework */; };
+		9804BD0416DDD8DC00367062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9804BD0216DDD8DC00367062 /* InfoPlist.strings */; };
+		9804BD0716DDD8DC00367062 /* ConstellationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9804BD0616DDD8DC00367062 /* ConstellationsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9804BCFD16DDD8DC00367062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9804BCC816DDD8DB00367062 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9804BCD016DDD8DB00367062;
+			remoteInfo = Constellations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9804BCD116DDD8DB00367062 /* Constellations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Constellations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9804BCD516DDD8DB00367062 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9804BCD716DDD8DB00367062 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9804BCD916DDD8DB00367062 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9804BCDD16DDD8DB00367062 /* Constellations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Constellations-Info.plist"; sourceTree = "<group>"; };
+		9804BCDF16DDD8DB00367062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9804BCE116DDD8DB00367062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9804BCE316DDD8DB00367062 /* Constellations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Constellations-Prefix.pch"; sourceTree = "<group>"; };
+		9804BCE416DDD8DB00367062 /* ConstellationsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstellationsAppDelegate.h; sourceTree = "<group>"; };
+		9804BCE516DDD8DB00367062 /* ConstellationsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstellationsAppDelegate.m; sourceTree = "<group>"; };
+		9804BCE716DDD8DB00367062 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9804BCE916DDD8DB00367062 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9804BCEB16DDD8DB00367062 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9804BCED16DDD8DB00367062 /* ConstellationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstellationsViewController.h; sourceTree = "<group>"; };
+		9804BCEE16DDD8DB00367062 /* ConstellationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstellationsViewController.m; sourceTree = "<group>"; };
+		9804BCF116DDD8DB00367062 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConstellationsViewController.xib; sourceTree = "<group>"; };
+		9804BCF816DDD8DC00367062 /* ConstellationsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstellationsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9804BCF916DDD8DC00367062 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9804BD0116DDD8DC00367062 /* ConstellationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConstellationsTests-Info.plist"; sourceTree = "<group>"; };
+		9804BD0316DDD8DC00367062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9804BD0516DDD8DC00367062 /* ConstellationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstellationsTests.h; sourceTree = "<group>"; };
+		9804BD0616DDD8DC00367062 /* ConstellationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstellationsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9804BCCE16DDD8DB00367062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804BCD616DDD8DB00367062 /* UIKit.framework in Frameworks */,
+				9804BCD816DDD8DB00367062 /* Foundation.framework in Frameworks */,
+				9804BCDA16DDD8DB00367062 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9804BCF416DDD8DC00367062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804BCFA16DDD8DC00367062 /* SenTestingKit.framework in Frameworks */,
+				9804BCFB16DDD8DC00367062 /* UIKit.framework in Frameworks */,
+				9804BCFC16DDD8DC00367062 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9804BCC616DDD8DB00367062 = {
+			isa = PBXGroup;
+			children = (
+				9804BCDB16DDD8DB00367062 /* Constellations */,
+				9804BCFF16DDD8DC00367062 /* ConstellationsTests */,
+				9804BCD416DDD8DB00367062 /* Frameworks */,
+				9804BCD216DDD8DB00367062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9804BCD216DDD8DB00367062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9804BCD116DDD8DB00367062 /* Constellations.app */,
+				9804BCF816DDD8DC00367062 /* ConstellationsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9804BCD416DDD8DB00367062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9804BCD516DDD8DB00367062 /* UIKit.framework */,
+				9804BCD716DDD8DB00367062 /* Foundation.framework */,
+				9804BCD916DDD8DB00367062 /* CoreGraphics.framework */,
+				9804BCF916DDD8DC00367062 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9804BCDB16DDD8DB00367062 /* Constellations */ = {
+			isa = PBXGroup;
+			children = (
+				9804BCE416DDD8DB00367062 /* ConstellationsAppDelegate.h */,
+				9804BCE516DDD8DB00367062 /* ConstellationsAppDelegate.m */,
+				9804BCED16DDD8DB00367062 /* ConstellationsViewController.h */,
+				9804BCEE16DDD8DB00367062 /* ConstellationsViewController.m */,
+				9804BCF016DDD8DB00367062 /* ConstellationsViewController.xib */,
+				9804BCDC16DDD8DB00367062 /* Supporting Files */,
+			);
+			path = Constellations;
+			sourceTree = "<group>";
+		};
+		9804BCDC16DDD8DB00367062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9804BCDD16DDD8DB00367062 /* Constellations-Info.plist */,
+				9804BCDE16DDD8DB00367062 /* InfoPlist.strings */,
+				9804BCE116DDD8DB00367062 /* main.m */,
+				9804BCE316DDD8DB00367062 /* Constellations-Prefix.pch */,
+				9804BCE716DDD8DB00367062 /* Default.png */,
+				9804BCE916DDD8DB00367062 /* Default@2x.png */,
+				9804BCEB16DDD8DB00367062 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9804BCFF16DDD8DC00367062 /* ConstellationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9804BD0516DDD8DC00367062 /* ConstellationsTests.h */,
+				9804BD0616DDD8DC00367062 /* ConstellationsTests.m */,
+				9804BD0016DDD8DC00367062 /* Supporting Files */,
+			);
+			path = ConstellationsTests;
+			sourceTree = "<group>";
+		};
+		9804BD0016DDD8DC00367062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9804BD0116DDD8DC00367062 /* ConstellationsTests-Info.plist */,
+				9804BD0216DDD8DC00367062 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9804BCD016DDD8DB00367062 /* Constellations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9804BD0A16DDD8DC00367062 /* Build configuration list for PBXNativeTarget "Constellations" */;
+			buildPhases = (
+				9804BCCD16DDD8DB00367062 /* Sources */,
+				9804BCCE16DDD8DB00367062 /* Frameworks */,
+				9804BCCF16DDD8DB00367062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Constellations;
+			productName = Constellations;
+			productReference = 9804BCD116DDD8DB00367062 /* Constellations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9804BCF716DDD8DC00367062 /* ConstellationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9804BD0D16DDD8DC00367062 /* Build configuration list for PBXNativeTarget "ConstellationsTests" */;
+			buildPhases = (
+				9804BCF316DDD8DC00367062 /* Sources */,
+				9804BCF416DDD8DC00367062 /* Frameworks */,
+				9804BCF516DDD8DC00367062 /* Resources */,
+				9804BCF616DDD8DC00367062 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9804BCFE16DDD8DC00367062 /* PBXTargetDependency */,
+			);
+			name = ConstellationsTests;
+			productName = ConstellationsTests;
+			productReference = 9804BCF816DDD8DC00367062 /* ConstellationsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9804BCC816DDD8DB00367062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Constellations;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Steve;
+			};
+			buildConfigurationList = 9804BCCB16DDD8DB00367062 /* Build configuration list for PBXProject "Constellations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9804BCC616DDD8DB00367062;
+			productRefGroup = 9804BCD216DDD8DB00367062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9804BCD016DDD8DB00367062 /* Constellations */,
+				9804BCF716DDD8DC00367062 /* ConstellationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9804BCCF16DDD8DB00367062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804BCE016DDD8DB00367062 /* InfoPlist.strings in Resources */,
+				9804BCE816DDD8DB00367062 /* Default.png in Resources */,
+				9804BCEA16DDD8DB00367062 /* Default@2x.png in Resources */,
+				9804BCEC16DDD8DB00367062 /* Default-568h@2x.png in Resources */,
+				9804BCF216DDD8DB00367062 /* ConstellationsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9804BCF516DDD8DC00367062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804BD0416DDD8DC00367062 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9804BCF616DDD8DC00367062 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9804BCCD16DDD8DB00367062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804BCE216DDD8DB00367062 /* main.m in Sources */,
+				9804BCE616DDD8DB00367062 /* ConstellationsAppDelegate.m in Sources */,
+				9804BCEF16DDD8DB00367062 /* ConstellationsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9804BCF316DDD8DC00367062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804BD0716DDD8DC00367062 /* ConstellationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9804BCFE16DDD8DC00367062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9804BCD016DDD8DB00367062 /* Constellations */;
+			targetProxy = 9804BCFD16DDD8DC00367062 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9804BCDE16DDD8DB00367062 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9804BCDF16DDD8DB00367062 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9804BCF016DDD8DB00367062 /* ConstellationsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9804BCF116DDD8DB00367062 /* en */,
+			);
+			name = ConstellationsViewController.xib;
+			sourceTree = "<group>";
+		};
+		9804BD0216DDD8DC00367062 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9804BD0316DDD8DC00367062 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9804BD0816DDD8DC00367062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9804BD0916DDD8DC00367062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9804BD0B16DDD8DC00367062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Constellations/Constellations-Prefix.pch";
+				INFOPLIST_FILE = "Constellations/Constellations-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9804BD0C16DDD8DC00367062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Constellations/Constellations-Prefix.pch";
+				INFOPLIST_FILE = "Constellations/Constellations-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9804BD0E16DDD8DC00367062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Constellations.app/Constellations";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Constellations/Constellations-Prefix.pch";
+				INFOPLIST_FILE = "ConstellationsTests/ConstellationsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9804BD0F16DDD8DC00367062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Constellations.app/Constellations";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Constellations/Constellations-Prefix.pch";
+				INFOPLIST_FILE = "ConstellationsTests/ConstellationsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9804BCCB16DDD8DB00367062 /* Build configuration list for PBXProject "Constellations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9804BD0816DDD8DC00367062 /* Debug */,
+				9804BD0916DDD8DC00367062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9804BD0A16DDD8DC00367062 /* Build configuration list for PBXNativeTarget "Constellations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9804BD0B16DDD8DC00367062 /* Debug */,
+				9804BD0C16DDD8DC00367062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9804BD0D16DDD8DC00367062 /* Build configuration list for PBXNativeTarget "ConstellationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9804BD0E16DDD8DC00367062 /* Debug */,
+				9804BD0F16DDD8DC00367062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9804BCC816DDD8DB00367062 /* Project object */;
+}

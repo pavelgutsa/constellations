@@ -10,4 +10,7 @@
 
 @interface ConstellationsViewController : UIViewController
 
+@property (strong, nonatomic) UIImagePickerController *picker;
+@property (strong, nonatomic) IBOutlet UIImageView * selectedImage;
+
 @end

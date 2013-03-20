@@ -23,6 +23,7 @@
 		9804BCFC16DDD8DC00367062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9804BCD716DDD8DB00367062 /* Foundation.framework */; };
 		9804BD0416DDD8DC00367062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9804BD0216DDD8DC00367062 /* InfoPlist.strings */; };
 		9804BD0716DDD8DC00367062 /* ConstellationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9804BD0616DDD8DC00367062 /* ConstellationsTests.m */; };
+		9898931D16E738D900C8E9D8 /* ImageButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9898931C16E738D900C8E9D8 /* ImageButton.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9804BD0316DDD8DC00367062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9804BD0516DDD8DC00367062 /* ConstellationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstellationsTests.h; sourceTree = "<group>"; };
 		9804BD0616DDD8DC00367062 /* ConstellationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstellationsTests.m; sourceTree = "<group>"; };
+		9898931C16E738D900C8E9D8 /* ImageButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageButton.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		9804BCDC16DDD8DB00367062 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9898931C16E738D900C8E9D8 /* ImageButton.jpg */,
 				9804BCDD16DDD8DB00367062 /* Constellations-Info.plist */,
 				9804BCDE16DDD8DB00367062 /* InfoPlist.strings */,
 				9804BCE116DDD8DB00367062 /* main.m */,
@@ -237,6 +240,7 @@
 				9804BCEA16DDD8DB00367062 /* Default@2x.png in Resources */,
 				9804BCEC16DDD8DB00367062 /* Default-568h@2x.png in Resources */,
 				9804BCF216DDD8DB00367062 /* ConstellationsViewController.xib in Resources */,
+				9898931D16E738D900C8E9D8 /* ImageButton.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +385,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Constellations/Constellations-Prefix.pch";
 				INFOPLIST_FILE = "Constellations/Constellations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,7 +398,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Constellations/Constellations-Prefix.pch";
 				INFOPLIST_FILE = "Constellations/Constellations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -450,6 +458,7 @@
 				9804BD0C16DDD8DC00367062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9804BD0D16DDD8DC00367062 /* Build configuration list for PBXNativeTarget "ConstellationsTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +467,7 @@
 				9804BD0F16DDD8DC00367062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,13 +13,16 @@
 @property (strong, atomic) UIButton *mSelectImageButton;
 @property (strong, atomic) UIImageView *selectedImageView;
 
+@property (strong, nonatomic) UIImagePickerController *picker;
+//@property (strong, nonatomic) IBOutlet UIImageView * selectedImageView;
+
 @end
 
 @implementation ConstellationsViewController
 
-@synthesize picker, selectedImage;
+@synthesize picker, selectedImageView;
 @synthesize mSelectImageButton;
-@synthesize selectedImageView;
+//@synthesize selectedImageView;
 
 - (void)viewDidLoad
 {
@@ -85,13 +88,19 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
     
-    [self presentModalViewController:picker animated:YES];
+    //[self presentModalViewController:picker animated:YES];
+    
+    if ([self respondsToSelector:@selector(presentViewController:animated:completion:)]){
+        [self presentViewController:picker animated:YES completion:nil];
+    } else {
+        [self presentModalViewController:picker animated:YES];
+    }
 }
 
 // User cancelled image picking
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *) Picker {
     NSLog(@"User cancelled the Image Picker");
-    [[Picker parentViewController] dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // User selects an image or takes a photo with the camera
@@ -99,14 +108,38 @@
     NSLog(@"User selected an image with the Image Picker");
     
     // Assign the selected image
-    selectedImage.image = [info objectForKey:UIImagePickerControllerOriginalImage];
-
+    UIImage* selectedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
     // Dismiss the image picking dialog
-    [[Picker parentViewController] dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
+    // Get screen size
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    // Get image size
+    CGSize selectedImageSize = selectedImage.size;
+
+    // Scale the image
+    UIImage* scaledImage = [self imageByScalingProportionallyToSize:selectedImage:screenRect.size];
+
     // Create selected image view
-    selectedImageView = [[UIImageView alloc] initWithImage:selectedImage.image];
+    selectedImageView = [[UIImageView alloc] initWithImage:scaledImage];
+    selectedImageView.backgroundColor = [UIColor blackColor];
     
+    //selectedImageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    // Put the selected image in the center of the view
+    /*selectedImageView.frame = CGRectMake(
+      (screenRect.size.width-selectedImageSize.width)/2,
+      (screenRect.size.height-selectedImageSize.height)/2,
+      selectedImageSize.width,
+      selectedImageSize.height);
+    
+    NSLog(@"Selected image view frame is set to x=%f, y=%f, width=%f, height=%f",
+          (screenRect.size.width-selectedImageSize.width)/2,
+          (screenRect.size.height-selectedImageSize.height)/2,
+          selectedImageSize.width,
+          selectedImageSize.height);
+    */
     // Sent image view frame to the full screen size
     selectedImageView.frame = [[UIScreen mainScreen] bounds];
     
@@ -121,6 +154,65 @@
     
     // Show the selected image view
     [self.view addSubview:selectedImageView];
+}
+
+- (UIImage *)imageByScalingProportionallyToSize:(UIImage *)sourceImage:(CGSize)targetSize {
+    
+    UIImage *newImage = nil;
+    
+    CGSize imageSize = sourceImage.size;
+    CGFloat width = imageSize.width;
+    CGFloat height = imageSize.height;
+    
+    CGFloat targetWidth = targetSize.width;
+    CGFloat targetHeight = targetSize.height;
+    
+    CGFloat scaleFactor = 0.0;
+    CGFloat scaledWidth = targetWidth;
+    CGFloat scaledHeight = targetHeight;
+    
+    CGPoint thumbnailPoint = CGPointMake(0.0,0.0);
+    
+    if (CGSizeEqualToSize(imageSize, targetSize) == NO) {
+        
+        CGFloat widthFactor = targetWidth / width;
+        CGFloat heightFactor = targetHeight / height;
+        
+        if (widthFactor < heightFactor)
+            scaleFactor = widthFactor;
+        else
+            scaleFactor = heightFactor;
+        
+        scaledWidth  = width * scaleFactor;
+        scaledHeight = height * scaleFactor;
+        
+        // center the image
+        
+        if (widthFactor < heightFactor) {
+            thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5; 
+        } else if (widthFactor > heightFactor) {
+            thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
+        }
+    }
+    
+    // this is actually the interesting part:
+    
+    UIGraphicsBeginImageContext(targetSize);
+    
+    CGRect thumbnailRect = CGRectZero;
+    thumbnailRect.origin = thumbnailPoint;
+    thumbnailRect.size.width  = scaledWidth;
+    thumbnailRect.size.height = scaledHeight;
+    
+    [sourceImage drawInRect:thumbnailRect];
+    
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    if(newImage == nil) NSLog(@"could not scale image");
+    
+    
+    return newImage ;
 }
 
 - (void)didReceiveMemoryWarning
